@@ -1,0 +1,1 @@
+SELECT group_id from users where posts_qty = (SELECT MAX(posts_qty) FROM users) group by group_id;
